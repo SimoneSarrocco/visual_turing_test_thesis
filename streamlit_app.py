@@ -171,7 +171,7 @@ elif st.session_state.phase == 'preservation':
 
         st.write("Please answer the following questions about the images:")
         
-        preservation = st.radio("Are all the anatomical structures shown in the input preserved in the model output?", 
+        preservation = st.radio("Are all the anatomical structures shown in the input ART10 image preserved in the model output?", 
                                 ["Yes", "No"], key=f"preservation_{st.session_state.question_index}")
         
         problems = st.text_area("Explain the main problems that you see in the model output (e.g., introduction of new artifacts, bad reconstruction of specific anatomical structures, etc.)", 
